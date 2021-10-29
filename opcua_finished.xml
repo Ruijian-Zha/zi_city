@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--MDC_OPCUA_SERVER Project File, SCAPEAK, 2019-->
+<MDC_OPCUA_SERVER_Project Name="Project" CreateTime="2021-10-29 19:48:59" Comment="默认项目配置">
+  <Group Name="NewGroup_0" Enable="1" Comment="">
+    <Device Name="Connection_0" Protocol="SimaticTcpClient" Enable="1" Comment="" Parm="Interface=Ethernet IpAddr=194.167.3.102 Port=102 DstTsap= Timeout=2000 Interval=100">
+      <Item Name="@DeviceOnline" Alias="设备通讯在线" UA_Type="UA_Boolean" Enable="1" Writable="0" Comment="设备通讯在线" Parm="" />
+      <Item Name="@ItemUpdatedTime" Alias="标签更新时间" UA_Type="UA_UInt32" Enable="1" Writable="0" Comment="标签更新时间（毫秒）" Parm="" />
+      <Item Name="土壤1-温度" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=100 BitNo=0 StringLength=1" />
+      <Item Name="土壤1-湿度" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=104 BitNo=0 StringLength=1" />
+      <Item Name="土壤2-温度" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=300 BitNo=0 StringLength=1" />
+      <Item Name="土壤2-湿度" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=304 BitNo=0 StringLength=1" />
+      <Item Name="土壤3-温度" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=308 BitNo=0 StringLength=1" />
+      <Item Name="土壤3-湿度" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=312 BitNo=0 StringLength=1" />
+      <Item Name="液位-高度" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=120 BitNo=0 StringLength=1" />
+      <Item Name="浊度仪1-浊度" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=140 BitNo=0 StringLength=1" />
+      <Item Name="浊度仪2-浊度" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=144 BitNo=0 StringLength=1" />
+      <Item Name="雨量-值" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=160 BitNo=0 StringLength=1" />
+      <Item Name="大气-二氧化碳" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=204 BitNo=0 StringLength=1" />
+      <Item Name="大气-大气压" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=200 BitNo=0 StringLength=1" />
+      <Item Name="大气-PM2.5" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=208 BitNo=0 StringLength=1" />
+      <Item Name="大气-PM10" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=212 BitNo=0 StringLength=1" />
+      <Item Name="大气-温度" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=216 BitNo=0 StringLength=1" />
+      <Item Name="大气-湿度" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=220 BitNo=0 StringLength=1" />
+      <Item Name="VD400" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=400 BitNo=0 StringLength=1" />
+      <Item Name="VD460" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=460 BitNo=0 StringLength=1" />
+      <Item Name="VD464" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=464 BitNo=0 StringLength=1" />
+      <Item Name="VD404" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=404 BitNo=0 StringLength=1" />
+      <Item Name="VD408" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=408 BitNo=0 StringLength=1" />
+      <Item Name="VD412" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=412 BitNo=0 StringLength=1" />
+      <Item Name="VD420" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=420 BitNo=0 StringLength=1" />
+      <Item Name="VD424" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=424 BitNo=0 StringLength=1" />
+      <Item Name="VD428" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=428 BitNo=0 StringLength=1" />
+      <Item Name="VD432" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=432 BitNo=0 StringLength=1" />
+      <Item Name="VD436" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=436 BitNo=0 StringLength=1" />
+      <Item Name="VD440" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=440 BitNo=0 StringLength=1" />
+      <Item Name="VD444" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=444 BitNo=0 StringLength=1" />
+      <Item Name="VD448" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=448 BitNo=0 StringLength=1" />
+      <Item Name="VD452" Alias="" UA_Type="UA_Float" Enable="1" Writable="1" Comment="" Parm="Area=DB DBNo=1 Offset=452 BitNo=0 StringLength=1" />
+    </Device>
+  </Group>
+</MDC_OPCUA_SERVER_Project>

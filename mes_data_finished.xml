@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--MES_DATA_SERVER Project File, SCAPEAK, 2019-->
+<MES.DATA.SERVER Name="Project_Default" CreateTime="2021-10-29 19:49:35" Comment="默认项目配置">
+  <DataSource>
+    <OpcUaServer ServerName="UaServer1" EndpointUrl="opc.tcp://169.194.3.98:4840" />
+  </DataSource>
+  <DatabaseServer ServerHost="127.0.0.1" ServerPort="3306" AccountUser="scaedge" AccountPassword="scapeak">
+    <Database DatabaseName="test121" CreateIfNotExist="yes" DropIfExist="yes">
+      <Table TableName="1soil_temp_1" Comment="" TableType="RegularRecord" RegularTime="300000" RecordLimit="10" CreateIfNotExist="yes" DropIfExist="yes">
+        <Field FieldName="ID" FieldAlias="自增字段(主键)，每张表只允许一个自增字段" FieldType="INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY" DataFormat="NULL" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="PLCID" FieldAlias="固定数值字段" FieldType="INT" DataFormat="1" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="DT" FieldAlias="日期时间字段" FieldType="DATETIME(3)" DataFormat="NOW(3)" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="value" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.2f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.土壤1-温度" />
+        <Field FieldName="alarm" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.0f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.VD400" />
+        <Field FieldName="SyncFlag" FieldAlias="固定数值字段" FieldType="INT" DataFormat="0" DataSource="DataFormat" ItemNode="" />
+      </Table>
+      <Table TableName="1soil_temp_2" Comment="" TableType="RegularRecord" RegularTime="300000" RecordLimit="10" CreateIfNotExist="yes" DropIfExist="yes">
+        <Field FieldName="ID" FieldAlias="自增字段(主键)，每张表只允许一个自增字段" FieldType="INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY" DataFormat="NULL" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="PLCID" FieldAlias="固定数值字段" FieldType="INT" DataFormat="1" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="DT" FieldAlias="日期时间字段" FieldType="DATETIME(3)" DataFormat="NOW(3)" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="value" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.2f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.土壤2-温度" />
+        <Field FieldName="alarm" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.0f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.VD400" />
+        <Field FieldName="SyncFlag" FieldAlias="固定数值字段" FieldType="INT" DataFormat="0" DataSource="DataFormat" ItemNode="" />
+      </Table>
+      <Table TableName="1soil_temp_3" Comment="" TableType="RegularRecord" RegularTime="300000" RecordLimit="10" CreateIfNotExist="yes" DropIfExist="yes">
+        <Field FieldName="ID" FieldAlias="自增字段(主键)，每张表只允许一个自增字段" FieldType="INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY" DataFormat="NULL" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="PLCID" FieldAlias="固定数值字段" FieldType="INT" DataFormat="1" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="DT" FieldAlias="日期时间字段" FieldType="DATETIME(3)" DataFormat="NOW(3)" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="value" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.2f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.土壤3-温度" />
+        <Field FieldName="alarm" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.0f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.VD400" />
+        <Field FieldName="SyncFlag" FieldAlias="固定数值字段" FieldType="INT" DataFormat="0" DataSource="DataFormat" ItemNode="" />
+      </Table>
+      <Table TableName="2soil_humidity_1" Comment="" TableType="RegularRecord" RegularTime="300000" RecordLimit="10" CreateIfNotExist="yes" DropIfExist="yes">
+        <Field FieldName="ID" FieldAlias="自增字段(主键)，每张表只允许一个自增字段" FieldType="INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY" DataFormat="NULL" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="PLCID" FieldAlias="固定数值字段" FieldType="INT" DataFormat="1" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="DT" FieldAlias="日期时间字段" FieldType="DATETIME(3)" DataFormat="NOW(3)" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="value" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.2f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.土壤1-湿度" />
+        <Field FieldName="alarm" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.0f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.VD400" />
+        <Field FieldName="SyncFlag" FieldAlias="固定数值字段" FieldType="INT" DataFormat="0" DataSource="DataFormat" ItemNode="" />
+      </Table>
+      <Table TableName="2soil_humidity_2" Comment="" TableType="RegularRecord" RegularTime="300000" RecordLimit="10" CreateIfNotExist="yes" DropIfExist="yes">
+        <Field FieldName="ID" FieldAlias="自增字段(主键)，每张表只允许一个自增字段" FieldType="INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY" DataFormat="NULL" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="PLCID" FieldAlias="固定数值字段" FieldType="INT" DataFormat="1" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="DT" FieldAlias="日期时间字段" FieldType="DATETIME(3)" DataFormat="NOW(3)" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="value" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.2f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.土壤2-湿度" />
+        <Field FieldName="alarm" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.0f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.VD400" />
+        <Field FieldName="SyncFlag" FieldAlias="固定数值字段" FieldType="INT" DataFormat="0" DataSource="DataFormat" ItemNode="" />
+      </Table>
+      <Table TableName="2soil_humidity_3" Comment="" TableType="RegularRecord" RegularTime="300000" RecordLimit="10" CreateIfNotExist="yes" DropIfExist="yes">
+        <Field FieldName="ID" FieldAlias="自增字段(主键)，每张表只允许一个自增字段" FieldType="INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY" DataFormat="NULL" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="PLCID" FieldAlias="固定数值字段" FieldType="INT" DataFormat="1" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="DT" FieldAlias="日期时间字段" FieldType="DATETIME(3)" DataFormat="NOW(3)" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="value" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.2f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.土壤3-湿度" />
+        <Field FieldName="alarm" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.0f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.VD400" />
+        <Field FieldName="SyncFlag" FieldAlias="固定数值字段" FieldType="INT" DataFormat="0" DataSource="DataFormat" ItemNode="" />
+      </Table>
+      <Table TableName="3level_height" Comment="" TableType="RegularRecord" RegularTime="300000" RecordLimit="10" CreateIfNotExist="yes" DropIfExist="yes">
+        <Field FieldName="ID" FieldAlias="自增字段(主键)，每张表只允许一个自增字段" FieldType="INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY" DataFormat="NULL" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="PLCID" FieldAlias="固定数值字段" FieldType="INT" DataFormat="1" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="DT" FieldAlias="日期时间字段" FieldType="DATETIME(3)" DataFormat="NOW(3)" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="value" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.2f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.液位-高度" />
+        <Field FieldName="alarm" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.0f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.VD404" />
+        <Field FieldName="SyncFlag" FieldAlias="固定数值字段" FieldType="INT" DataFormat="0" DataSource="DataFormat" ItemNode="" />
+      </Table>
+      <Table TableName="4turbidityMeter_turbidity_1" Comment="" TableType="RegularRecord" RegularTime="300000" RecordLimit="10" CreateIfNotExist="yes" DropIfExist="yes">
+        <Field FieldName="ID" FieldAlias="自增字段(主键)，每张表只允许一个自增字段" FieldType="INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY" DataFormat="NULL" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="PLCID" FieldAlias="固定数值字段" FieldType="INT" DataFormat="1" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="DT" FieldAlias="日期时间字段" FieldType="DATETIME(3)" DataFormat="NOW(3)" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="value" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.2f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.浊度仪1-浊度" />
+        <Field FieldName="alarm" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.0f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.VD408" />
+        <Field FieldName="SyncFlag" FieldAlias="固定数值字段" FieldType="INT" DataFormat="0" DataSource="DataFormat" ItemNode="" />
+      </Table>
+      <Table TableName="4turbidityMeter_turbidity_2" Comment="" TableType="RegularRecord" RegularTime="300000" RecordLimit="10" CreateIfNotExist="yes" DropIfExist="yes">
+        <Field FieldName="ID" FieldAlias="自增字段(主键)，每张表只允许一个自增字段" FieldType="INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY" DataFormat="NULL" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="PLCID" FieldAlias="固定数值字段" FieldType="INT" DataFormat="1" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="DT" FieldAlias="日期时间字段" FieldType="DATETIME(3)" DataFormat="NOW(3)" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="value" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.2f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.浊度仪2-浊度" />
+        <Field FieldName="alarm" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.0f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.VD412" />
+        <Field FieldName="SyncFlag" FieldAlias="固定数值字段" FieldType="INT" DataFormat="0" DataSource="DataFormat" ItemNode="" />
+      </Table>
+      <Table TableName="7rainfall" Comment="" TableType="RegularRecord" RegularTime="300000" RecordLimit="10" CreateIfNotExist="yes" DropIfExist="yes">
+        <Field FieldName="ID" FieldAlias="自增字段(主键)，每张表只允许一个自增字段" FieldType="INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY" DataFormat="NULL" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="PLCID" FieldAlias="固定数值字段" FieldType="INT" DataFormat="1" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="DT" FieldAlias="日期时间字段" FieldType="DATETIME(3)" DataFormat="NOW(3)" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="value" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.2f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.雨量-值" />
+        <Field FieldName="alarm" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.0f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.VD420" />
+        <Field FieldName="SyncFlag" FieldAlias="固定数值字段" FieldType="INT" DataFormat="0" DataSource="DataFormat" ItemNode="" />
+      </Table>
+      <Table TableName="10atmospheric_pressure" Comment="" TableType="RegularRecord" RegularTime="300000" RecordLimit="10" CreateIfNotExist="yes" DropIfExist="yes">
+        <Field FieldName="ID" FieldAlias="自增字段(主键)，每张表只允许一个自增字段" FieldType="INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY" DataFormat="NULL" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="PLCID" FieldAlias="固定数值字段" FieldType="INT" DataFormat="1" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="DT" FieldAlias="日期时间字段" FieldType="DATETIME(3)" DataFormat="NOW(3)" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="value" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.2f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.大气-大气压" />
+        <Field FieldName="alarm" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.0f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.VD432" />
+        <Field FieldName="SyncFlag" FieldAlias="固定数值字段" FieldType="INT" DataFormat="0" DataSource="DataFormat" ItemNode="" />
+      </Table>
+      <Table TableName="11carbon_dioxide" Comment="" TableType="RegularRecord" RegularTime="300000" RecordLimit="10" CreateIfNotExist="yes" DropIfExist="yes">
+        <Field FieldName="ID" FieldAlias="自增字段(主键)，每张表只允许一个自增字段" FieldType="INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY" DataFormat="NULL" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="PLCID" FieldAlias="固定数值字段" FieldType="INT" DataFormat="1" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="DT" FieldAlias="日期时间字段" FieldType="DATETIME(3)" DataFormat="NOW(3)" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="value" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.2f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.大气-二氧化碳" />
+        <Field FieldName="alarm" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.0f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.VD440" />
+        <Field FieldName="SyncFlag" FieldAlias="固定数值字段" FieldType="INT" DataFormat="0" DataSource="DataFormat" ItemNode="" />
+      </Table>
+      <Table TableName="12PM_2_5" Comment="" TableType="RegularRecord" RegularTime="300000" RecordLimit="10" CreateIfNotExist="yes" DropIfExist="yes">
+        <Field FieldName="ID" FieldAlias="自增字段(主键)，每张表只允许一个自增字段" FieldType="INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY" DataFormat="NULL" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="PLCID" FieldAlias="固定数值字段" FieldType="INT" DataFormat="1" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="DT" FieldAlias="日期时间字段" FieldType="DATETIME(3)" DataFormat="NOW(3)" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="value" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.2f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.大气-PM2.5" />
+        <Field FieldName="alarm" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.0f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.VD436" />
+        <Field FieldName="SyncFlag" FieldAlias="固定数值字段" FieldType="INT" DataFormat="0" DataSource="DataFormat" ItemNode="" />
+      </Table>
+      <Table TableName="13PM_10" Comment="" TableType="RegularRecord" RegularTime="300000" RecordLimit="10" CreateIfNotExist="yes" DropIfExist="yes">
+        <Field FieldName="ID" FieldAlias="自增字段(主键)，每张表只允许一个自增字段" FieldType="INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY" DataFormat="NULL" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="PLCID" FieldAlias="固定数值字段" FieldType="INT" DataFormat="1" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="DT" FieldAlias="日期时间字段" FieldType="DATETIME(3)" DataFormat="NOW(3)" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="value" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.2f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.大气-PM10" />
+        <Field FieldName="alarm" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.0f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.VD444" />
+        <Field FieldName="SyncFlag" FieldAlias="固定数值字段" FieldType="INT" DataFormat="0" DataSource="DataFormat" ItemNode="" />
+      </Table>
+      <Table TableName="14air_temp" Comment="" TableType="RegularRecord" RegularTime="300000" RecordLimit="10" CreateIfNotExist="yes" DropIfExist="yes">
+        <Field FieldName="ID" FieldAlias="自增字段(主键)，每张表只允许一个自增字段" FieldType="INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY" DataFormat="NULL" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="PLCID" FieldAlias="固定数值字段" FieldType="INT" DataFormat="1" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="DT" FieldAlias="日期时间字段" FieldType="DATETIME(3)" DataFormat="NOW(3)" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="value" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.2f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.大气-温度" />
+        <Field FieldName="alarm" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.0f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.VD448" />
+        <Field FieldName="SyncFlag" FieldAlias="固定数值字段" FieldType="INT" DataFormat="0" DataSource="DataFormat" ItemNode="" />
+      </Table>
+      <Table TableName="15air_humidity" Comment="" TableType="RegularRecord" RegularTime="300000" RecordLimit="10" CreateIfNotExist="yes" DropIfExist="yes">
+        <Field FieldName="ID" FieldAlias="自增字段(主键)，每张表只允许一个自增字段" FieldType="INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY" DataFormat="NULL" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="PLCID" FieldAlias="固定数值字段" FieldType="INT" DataFormat="1" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="DT" FieldAlias="日期时间字段" FieldType="DATETIME(3)" DataFormat="NOW(3)" DataSource="DataFormat" ItemNode="" />
+        <Field FieldName="value" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.2f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.大气-湿度" />
+        <Field FieldName="alarm" FieldAlias="OPC标签值字段" FieldType="FLOAT" DataFormat="%.0f" DataSource="OpcUaServer" ItemNode="UaServer1|ns=1;s=Project.NewGroup_0.Connection_0.VD452" />
+        <Field FieldName="SyncFlag" FieldAlias="固定数值字段" FieldType="INT" DataFormat="0" DataSource="DataFormat" ItemNode="" />
+      </Table>
+    </Database>
+  </DatabaseServer>
+</MES.DATA.SERVER>

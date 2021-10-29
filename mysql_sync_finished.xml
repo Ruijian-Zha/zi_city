@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DbSync>
+  <!--<SyncTask SyncEnable="YES" TimeMs="5000" Name="Task1" AddSyncField="NO" DeleteOldTable="NO" DataClear="YES" CopyAllTables="YES" SyncMode="insert" DB_Engine="InnoDB"> 是否启用同步 多久同步一次ms 同步到那个数据库 默认 默认 默认 是否同步所有表 默认 默认 -->
+  <SyncTask DB_Engine="InnoDB" SyncMode="insert" CopyAllTables="YES" DataClear="YES" DeleteOldTable="NO" AddSyncField="NO" Name="Task1" TimeMs="300000" SyncEnable="YES">
+    <SourceDb Port="3306" Host="127.0.0.1" Password="scapeak" User="scaedge" DbName="test121" DbType="MYSQL"/>
+    <!--<SourceDb指本地数据库 DbType="MYSQL"数据库类型 DbName="test121"数据库名称 User="test" Password="test" Host="172.16.0.9" Port="3306"/>-->
+    <DestDb Port="3306" Host="rm-bp1afrg4k693x1652ho.mysql.rds.aliyuncs.com" Password="9k474yH79uHL" User="njwtuser" DbName="njwt" DbType="MYSQL"/>
+    <!--Dest目标数据库-->
+    <TableName Tables="test121data=InnoDB"/>
+    <!--同步多个表<TableName Tables="hisdata1=InnoDB hisdata2=InnoDB"/>-->
+  </SyncTask>
+</DbSync>
